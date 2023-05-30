@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <link rel="stylesheet" href="./css/shouye.css">
+    <script src=""></script>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header>
+        <div class="right">
+            <img src="./img/logo.jpg" alt="">
+        </div>
+        <div class="left">
+            <a href="#">
+                <img src="./img/my.jpg" alt="">
+            </a>
+            <a href="#">
+                <img src="./img/xiazai.jpg" alt="">
+            </a>
+        </div>
+    </header>
+
+
+
+    <footer>
+        <div class="di1">
+            北京找房无忧 > 首页
+        </div>
+        <ul>
+            <li>
+                <img src="./img/apple.png" alt="">
+                <div>
+                    <p>phone</p>
+                    <p>客户端</p>
+                </div>
+
+            </li>
+            <li>
+                <img src="./img/android.png" alt="">
+                <div>
+                    <p>Android</p>
+                    <p>客户端</p>
+                </div>
+
+            </li>
+        </ul>
+        <div class="di3">
+            <p>北京找房无忧房地产经纪公司</p>
+            <p>网络经营许可证京ICP备20160812号</p>
+        </div>
+
+
+    </footer>
+</body>
+
+</html>
+<script>
+
+    function setRem() {
+
+        var ui_w = 375;
+        var clientWidth = document.documentElement.clientWidth || document.body.clientWidth;
+        var html_ = document.querySelector("html")
+        html_.style.fontSize = `${(clientWidth / ui_w) * 10}px`;
+
+    }
+    window.onresize = setRem;
+    window.onload = setRem;
+</script>
