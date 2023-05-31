@@ -6,12 +6,316 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>北京租房</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./css/beijingzf.css">
     <script src=""></script>
 </head>
 
 <body>
 
+    <!-- 头部 -->
+    <header>
+        <div class="right">
+            <img src="./img/logo.jpg" alt="">
+        </div>
+        <div class="left">
+            <a href="./wddengluok.html">
+                <img src="./img/my.jpg" alt="">
+            </a>
+            <a href="#">
+                <img src="./img/xiazai.jpg" alt="">
+            </a>
+        </div>
+    </header>
+
+    <!-- 搜索栏------------ -->
+    <div class="sousuo">
+        <input type="text" placeholder="请输入小区名或商圈名称">
+        <span>|</span>
+        <a href="#"><img src="./img/search_03.png" alt=""></a>
+
+    </div>
+    <div class="lllll">
+        <!-- 遮罩层 -->
+        <div class="hide"></div>
+        <!-- tab切换----------- -->
+        <div class="tab">
+            <ul>
+                <!-- 添加active类名可以改变颜色反向 -->
+                <li>
+                    <h2>区域</h2>
+                    <span></span>
+                </li>
+                <li>
+                    <h2>价格</h2>
+                    <span></span>
+                </li>
+                <li>
+                    <h2>房型</h2>
+                    <span></span>
+                </li>
+                <li>
+                    <h2>更多</h2>
+                    <span></span>
+                </li>
+            </ul>
+        </div>
+        <!-- 切换内容 -->
+        <div class="tab2">
+            <!-- 区域 -->
+            <div class="area">
+                <div class="title">
+                    <h2 class="active">区域</h2>
+                    <h2>地铁</h2>
+                </div>
+                <div class="fujin">
+                    <ul>
+                        <li>附近</li>
+                        <li class="active">朝阳</li>
+                        <li>海淀</li>
+                        <li>昌平</li>
+                        <li>丰台</li>
+                        <li>石景山</li>
+                    </ul>
+                </div>
+                <div class="buxian">
+                    <ul>
+                        <li class='active'>不限</li>
+                        <li>安贞</li>
+                        <li>奥林匹克公园</li>
+                        <li>百子湾</li>
+                        <li>北工大</li>
+                        <li>北宛</li>
+                        <li>CBD</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 价格 -->
+            <div class="price">
+                <ul>
+                    <li>不限</li>
+                    <li>100万以下</li>
+                    <li>100万-150万</li>
+                    <li>150万-200万</li>
+                    <li>200万-300万</li>
+                    <li>300万-400万</li>
+                    <li>自定义价格</li>
+                </ul>
+            </div>
+            <!-- 房型 -->
+            <div class="house">
+                <ul>
+                    <li>不限 </li>
+                    <li>1室 <input type="radio" name="xuanze"> </li>
+                    <li>2室 <input type="radio" checked name="xuanze"></li>
+                    <li>3室 <input type="radio" name="xuanze"></li>
+                    <li>4室 <input type="radio" name="xuanze"></li>
+                    <li>5室 <input type="radio" name="xuanze"></li>
+                </ul>
+                <div class="btn">确定</div>
+            </div>
+            <!-- 更多 -->
+            <div class="more">
+                <ul>
+                    <li>
+                        <h3> 区域</h3>
+                        <span>北</span>
+                        <span>南北</span>
+                        <span>南</span>
+                        <span>东</span>
+                        <span>西</span>
+                    </li>
+                    <li>
+                        <h3>面积（平方）</h3>
+                        <span>50以下</span>
+                        <span>50-70</span>
+                        <span>70-90</span>
+                        <span>90-110</span>
+                        <span>110-130</span>
+                        <span>130-150</span>
+                        <span>150-200</span>
+                        <span>200以上</span>
+                    </li>
+                    <li>
+                        <h3>标签</h3>
+                        <span>学区房</span>
+                        <span>地铁房</span>
+                        <span>不限购房</span>
+                        <span>满两年</span>
+                        <span>满五唯一</span>
+                        <span>降价</span>
+                        <span>新上</span>
+                        <span>独家</span>
+                        <span>有钥匙</span>
+                    </li>
+                    <li>
+                        <h3>楼龄</h3>
+                        <span>5年以内</span>
+                        <span>10年以内</span>
+                        <span>10-20年</span>
+                        <span>20年以上</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <!-- 内容----------- -->
+    <main>
+        <ul>
+            <li>
+                <img src="./img/img1(1).png" alt="">
+                <div class="text">
+                    <h4>西便门外大街2是1厅89平</h4>
+                    <p>南北 高楼层/6层</p>
+                    <p>
+                        签约价格：152535元/平
+                        <span>12542万</span>
+                    </p>
+                    <p>签约日期：2015年11月10日</p>
+                </div>
+            </li>
+            <li>
+                <img src="./img/img2(1).png" alt="">
+                <div class="text">
+                    <h4>金桥国际 1室 1厅 63平</h4>
+                    <p>南北 高楼层/6层</p>
+                    <p>
+                        签约价格：4211552/平
+                        <span>50505万</span>
+                    </p>
+                    <p>签约日期：2015年11月10日</p>
+                </div>
+            </li>
+            <li>
+                <img src="./img/img4(2).png" alt="">
+                <div class="text">
+                    <h4>花间溪二期2室2厅 90平</h4>
+                    <p>南北 高楼层/6层</p>
+                    <p>
+                        签约价格：4211552/平
+                        <span>50501万</span>
+                    </p>
+                    <p>签约日期：2015年11月10日</p>
+                </div>
+            </li>
+            <li>
+                <img src="./img/img3(1).png" alt="">
+                <div class="text">
+                    <h4>万寿西街</h4>
+                    <p>南北 高楼层/6层</p>
+                    <p>
+                        签约价格：4211552/平
+                        <span>50505万</span>
+                    </p>
+                    <p>签约日期：2015年11月10日</p>
+                </div>
+            </li>
+        </ul>
+    </main>
+
+    <!-- 底部--------------- -->
+    <footer>
+        <div class="di1">
+            北京找房无忧 > 首页
+        </div>
+        <ul>
+            <li>
+                <img src="./img/apple.png" alt="">
+                <div>
+                    <p>phone</p>
+                    <p>客户端</p>
+                </div>
+
+            </li>
+            <li>
+                <img src="./img/android.png" alt="">
+                <div>
+                    <p>Android</p>
+                    <p>客户端</p>
+                </div>
+
+            </li>
+        </ul>
+        <div class="di3">
+            <p>北京找房无忧房地产经纪公司</p>
+            <p>网络经营许可证京ICP备20160812号</p>
+        </div>
+
+
+    </footer>
+
 </body>
 
 </html>
+<script>
+
+    function setRem() {
+
+        var ui_w = 375;
+        var clientWidth = document.documentElement.clientWidth || document.body.clientWidth;
+        var html_ = document.querySelector("html")
+        html_.style.fontSize = `${(clientWidth / ui_w) * 10}px`;
+
+    }
+    window.onresize = setRem;
+    window.onload = setRem;
+
+
+
+
+    // tab切换-----------------------
+    var li = document.getElementsByClassName('tab')[0].firstElementChild.children
+    var li2 = document.getElementsByClassName('tab2')[0].children
+    for (var i = 0; i < li.length; i++) {
+        li[i].setAttribute('index', i)
+        li[i].onclick = function () {
+
+            var index = this.getAttribute('index')
+            for (var k = 0; k < li.length; k++) {
+                li[k].className = ''
+                li[index].className = 'active'
+            }
+            for (var j = 0; j < li2.length; j++) {
+                li2[j].style.display = 'none'
+                li2[index].style.display = 'block'
+
+            }
+            if (index == 0) {
+                li2[index].style.display = 'flex';
+            }
+            return false
+        }
+
+
+    }
+    // 点击空白部分模板层消失
+
+    // li2.onclick = function () {
+    //     console.log(li2);
+    // }
+
+    // var body_ = document.getElementsByTagName('body')[0]
+    // console.log(body_);
+    // body_.onclick = function () {
+    //     ul.style.position = ''
+    // }
+
+
+    // 导航栏置于顶端----
+    var ul = document.getElementsByClassName('lllll')[0]
+    var hide = document.getElementsByClassName('hide')[0]
+    ul.onclick = function () {
+        ul.style.position = 'fixed'
+        ul.style.top = '0'
+        ul.style.backgroundColor = ' #fff'
+        ul.style.width = '100%'
+        hide.style.display = 'block'
+    }
+
+
+
+
+
+
+
+</script>

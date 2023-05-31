@@ -6,12 +6,165 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>房源信息</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./css/fyxx.css">
     <script src=""></script>
 </head>
 
 <body>
+    <!-- 头部 -->
+    <header>
+        <div class="right">
+            <img src="./img/logo.jpg" alt="">
+        </div>
+        <div class="left">
+            <a href="./wddengluok.html">
+                <img src="./img/my.jpg" alt="">
+            </a>
+            <a href="#">
+                <img src="./img/xiazai.jpg" alt="">
+            </a>
+        </div>
+    </header>
+    <!-- 标题 -->
+    <div class="title">
+        <p>
+            <strong>首页</strong>
+            >
+            <span>北京租房</span>
+            >
+            <span>房源信息</span>
+        </p>
+    </div>
+    <!-- 大图 -->
+    <div class="datu">
+        <img src="./img/banner(1).png" alt="">
+        <p>分享</p>
+    </div>
+    <!-- 内容-------------- -->
+    <div class="item">
+        <div class="top">
+            <h2>天鹅湾小区精装两居，满五唯一，业主换房急售</h2>
+            <a href="#">关注</a>
+        </div>
+        <div class="center">
+            <ul>
+                <li>
+                    <p>租金</p>
+                    <span>2300元/月</span>
+                </li>
+                <li>
+                    <p>房型</p>
+                    <span>2室1厅</span>
+                </li>
+                <li>
+                    <p>面积</p>
+                    <span>204平米</span>
+                </li>
+            </ul>
+        </div>
+        <div class="bottom">
+            <ul>
+                <li>楼层： 高楼/17层</li>
+                <li>朝向： 南北</li>
+                <li>装修： 精装</li>
+                <li>供暖： 集体供暖</li>
+                <li>年代： 2007年</li>
+                <li>楼型： 板楼</li>
+            </ul>
+        </div>
+    </div>
+    <div class="banxin">
+        <ul>
+            <li>
+                <h2>经纪人房评</h2>
+                <p>
+                    地理位置：晶都国际处于酒仙桥中心地带，毗邻
+                    北京三大商圈，紧邻丽都商圈，隔四环与望京商
+                    圈相望，西南紧挨燕莎商圈，地理位置优越。周
+                    边配套：颐堤港商业中心，兆维大厦...
+                </p>
+            </li>
+            <li>
+                <h2>经纪人房评</h2>
+                <p>
+                    近一个月新增0位看房客户，共50位
+                </p>
+            </li>
+
+            <li>
+                <h2>经纪人房评</h2>
+                <div class="img">
+                    <h3>地址: [黄村]时代龙和</h3>
+                    <img src="./img/map.png" alt="">
+                </div>
+
+            </li>
+            <li>
+                <h2>经纪人房评</h2>
+                <p>3 室 2 厅，146 平米，
+                    <span>
+                        5000 元
+                    </span>
+                </p>
+                <p>签约日期：2015-02-26</p>
+            </li>
+        </ul>
+    </div>
+    <div class="lianxi">
+        <img src="./img/man.png" alt="">
+        <div class="text">
+            <p>张三</p>
+            <p>40015818555转088</p>
+        </div>
+        <a href="#">短信</a>
+        <a href="#">致电</a>
+    </div>
+
+
+    <!-- 底部--------------- -->
+    <footer>
+        <div class="di1">
+            北京找房无忧 > 首页
+        </div>
+        <ul>
+            <li>
+                <img src="./img/apple.png" alt="">
+                <div>
+                    <p>phone</p>
+                    <p>客户端</p>
+                </div>
+
+            </li>
+            <li>
+                <img src="./img/android.png" alt="">
+                <div>
+                    <p>Android</p>
+                    <p>客户端</p>
+                </div>
+
+            </li>
+        </ul>
+        <div class="di3">
+            <p>北京找房无忧房地产经纪公司</p>
+            <p>网络经营许可证京ICP备20160812号</p>
+        </div>
+
+
+    </footer>
 
 </body>
 
 </html>
+<script>
+
+    function setRem() {
+
+        var ui_w = 375;
+        var clientWidth = document.documentElement.clientWidth || document.body.clientWidth;
+        var html_ = document.querySelector("html")
+        html_.style.fontSize = `${(clientWidth / ui_w) * 10}px`;
+
+    }
+    window.onresize = setRem;
+    window.onload = setRem;
+</script>
