@@ -17,7 +17,7 @@
             <img src="./img/logo.jpg" alt="">
         </div>
         <div class="left">
-            <a href="#">
+            <a href="./wddengluok.html">
                 <img src="./img/my.jpg" alt="">
             </a>
             <a href="#">
@@ -25,6 +25,133 @@
             </a>
         </div>
     </header>
+
+    <div class="ban">
+        <img src="./img/banner.png" alt="">
+        <div class="search">
+            <i><img src="./img/./seach.jpg" alt=""></i>
+            <input type="text" placeholder="输入小区或商圈名开始找房咯！">
+        </div>
+    </div>
+    <div class="tu">
+        <a href="./guanzhuxq.html"> <img src="./img/index_03.png" alt="">
+            <span>二手房</span>
+
+        </a>
+        <a href="./beijingzf.html"> <img src="./img/index_05.png" alt="">
+            <span>新房</span>
+        </a>
+        <a href="#"> <img src="./img/index_07.png" alt=""> <span>租房</span>
+        </a>
+        <a href="#"> <img src="./img/index_09.png" alt=""> <span>卖房</span>
+        </a>
+
+
+    </div>
+    <div class="tu2">
+        <img src="./img/banner2.png" alt="">
+
+        <h2>
+            <p>热门房源</p>
+            <span> Hot house</span>
+        </h2>
+
+    </div>
+    <ul class="house">
+        <li>
+            <a href="./beijingzf.html">
+                <div class="pic">
+                    <img src="./img/img1.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h2>文化部中间层 一层带阁楼</h2>
+                    <p>
+                        2室1厅96㎡南北 <span>1105万</span>
+                    </p>
+                    <p>红庙北里 <span>14268元/平</span></p>
+                    <p><span>学区房</span> <span>独家</span></p>
+                </div>
+
+
+            </a>
+        </li>
+        <li>
+            <a href="./beijingzf.html">
+                <div class="pic">
+                    <img src="./img/img2.png" alt="">
+                </div>
+                <div class="text">
+                    <h2>光大水墨 精装复式 稀缺</h2>
+                    <p>
+                        2室1厅96㎡南北 <span>280万</span>
+                    </p>
+                    <p>光大水墨 <span>14268元/平</span></p>
+                    <p><span>学区房</span> <span>独家</span><span>满五唯一</span></p>
+                </div>
+
+
+            </a>
+        </li>
+        <li>
+            <a href="./fangyuants.html">
+                <div class="pic">
+                    <img src="./img/img3.png" alt="">
+                </div>
+                <div class="text">
+                    <h2>南北通透两居 精装修 无</h2>
+                    <p>
+                        2室1厅96㎡南北 <span>320万</span>
+                    </p>
+                    <p>北京新天地 <span>14268元/平</span></p>
+                    <p><span>地铁房</span> <span>独家</span></p>
+                </div>
+
+
+            </a>
+        </li>
+    </ul>
+    <div class="gezi">
+    </div>
+    <h3>
+        <p>热门关注</p>
+        <p>友情链接</p>
+    </h3>
+    <ul class="db">
+        <li>免税房源</li>
+        <li>北京找房无忧</li>
+        <li>满五年唯一免税</li>
+        <li>朝阳新房</li>
+        <li>海淀日租房</li>
+        <li>北京二手房价</li>
+
+    </ul>
+
+
+    <div class="ad">
+        <div class="zuo">
+            <i class="x"><img src="./img/close.png" alt=""></i>
+            <div>
+                <img src="./img/download.png" alt="">
+            </div>
+            <p>找房无忧<br>
+                <span>市场行情，一手掌握</span>
+
+            </p>
+
+
+        </div>
+        <div class="you">
+            免费下载
+        </div>
+
+
+
+
+    </div>
+
+
+
+
 
 
 
@@ -66,10 +193,21 @@
 
         var ui_w = 375;
         var clientWidth = document.documentElement.clientWidth || document.body.clientWidth;
+
+        clientWidth = clientWidth < 375 ? 375 : clientWidth;
         var html_ = document.querySelector("html")
         html_.style.fontSize = `${(clientWidth / ui_w) * 10}px`;
+
 
     }
     window.onresize = setRem;
     window.onload = setRem;
+
+
+    var xx = document.getElementsByClassName('x')[0]
+    var ad = document.getElementsByClassName('ad')[0]
+    xx.onclick = function () {
+        ad.style.display = 'none'
+
+    }
 </script>

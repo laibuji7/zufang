@@ -6,12 +6,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>我的-登录</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./css/wddenglu.css">
     <script src=""></script>
 </head>
 
 <body>
+    <header>
+        <div class="box">
+            <div class="right">
+
+            </div>
+            <div class="left">
+                <a href="./wddenglu.html">
+                    <img src="./img/urse.png" alt=""><br>
+                    我的
+                </a>
+                <a href="#">
+                    <img src="./img/down.png" alt=""><br>
+                    app
+                </a>
+            </div>
+        </div>
+
+
+        <div class="user">
+            <img src="./img/urse2.png" alt="">
+
+            <a href="./wdtab.html">登录</a>
+        </div>
+
+
+
+    </header>
+
+
+    <ul>
+        <li>
+            <a href="./fyxx.html">
+                <img src="./img/icon1.png" alt="">
+                我关注的房源
+
+
+            </a>
+        </li>
+        <li>
+            <a href="./fangyuants.html">
+                <img src="./img/icon2.png" alt="">
+                我关注的小区
+
+
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="./img/icon3.png" alt="">
+                我关注的新房
+
+
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="./img/icon4.png" alt="">
+                我的看房记录
+
+
+            </a>
+        </li>
+    </ul>
 
 </body>
 
 </html>
+<script>
+
+    function setRem() {
+
+        var ui_w = 375;
+        var clientWidth = document.documentElement.clientWidth || document.body.clientWidth;
+
+        clientWidth = clientWidth < 375 ? 375 : clientWidth;
+        var html_ = document.querySelector("html")
+        html_.style.fontSize = `${(clientWidth / ui_w) * 10}px`;
+
+
+    }
+    window.onresize = setRem;
+    window.onload = setRem;
+
+</script>

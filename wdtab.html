@@ -6,12 +6,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>我的-登录/快捷登录</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./css/wdtab.css">
     <script src=""></script>
 </head>
 
 <body>
+    <div class="header">
+        <header>
+            <div class="right">
+                <img src="./img/logo.jpg" alt="">
+            </div>
+            <div class="left">
+                <a href="./wddenglu.html">
+                    <img src="./img/my.jpg" alt="">
+                </a>
+                <a href="./shouye.html">
+                    <img src="./img/xiazai.jpg" alt="">
+                </a>
+            </div>
+        </header>
+        <div class="ye">
+            <p>首页 <span>>我的</span><span>>登录</span></p>
+
+
+        </div>
+
+
+
+    </div>
+
+
+    <div class="tab">
+        <div class="qie ji">
+            普通登录
+        </div>
+        <div class="qie">
+            验证码快捷登录
+        </div>
+    </div>
+
+    <div class="deng">
+        <div class="co">
+            <div class="text">
+                <input type="text" placeholder="请输入手机号码">
+
+            </div>
+            <div class="text">
+                <input type="text" placeholder="请输入密码">
+
+            </div>
+
+            <div class="btn">
+                立即登录
+            </div>
+
+        </div>
+
+        <div class="co" hidden>
+            <div class="text">
+                <input type="text" placeholder="请输入手机号码">
+                <div class="fa">
+                    发送验证码
+                </div>
+            </div>
+            <div class="text">
+                <input type="text" placeholder="请输入短信中的验证码">
+
+            </div>
+
+            <div class="btn">
+                验证并登录
+            </div>
+        </div>
+    </div>
+
+    <p class="endp">
+        <a href="./wdzhuce.html">立即注册</a>
+        <a href="./wdzhaohui.html">忘记密码</a>
+    </p>
 
 </body>
 
 </html>
+<script>
+
+    function setRem() {
+
+        var ui_w = 375;
+        var clientWidth = document.documentElement.clientWidth || document.body.clientWidth;
+
+        clientWidth = clientWidth < 375 ? 375 : clientWidth;
+        var html_ = document.querySelector("html")
+        html_.style.fontSize = `${(clientWidth / ui_w) * 10}px`;
+
+
+    }
+    window.onresize = setRem;
+    window.onload = setRem;
+
+    var qie = document.getElementsByClassName('qie')
+    var co = document.getElementsByClassName('co')
+    for (var i = 0; i < qie.length; i++) {
+        qie[i].setAttribute('in', i)
+
+
+        qie[i].onclick = function () {
+            var ind = this.getAttribute('in')
+            for (var j = 0; j < qie.length; j++) {
+                qie[j].classList.remove('ji');
+                qie[ind].classList.add('ji');
+
+            }
+            for (var k = 0; k < co.length; k++) {
+                co[k].style.display = 'none'
+                co[ind].style.display = 'block'
+            }
+        }
+    }
+
+
+    var fa = document.getElementsByClassName('fa')[0];
+    var str = 60
+    fa.onclick = function () {
+
+
+        var time = setInterval(function () {
+            str--
+
+            fa.innerHTML = `（${str}）重新发送`
+            if (str < 1) {
+                str = 60
+                clearInterval(time)
+                fa.innerHTML = `发送验证码`
+            }
+        }, 100)
+
+
+
+    }
+
+</script>
