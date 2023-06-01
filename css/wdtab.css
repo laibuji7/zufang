@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  background-color: #f4f4f4;
+}
+.header .xia {
+  border-bottom: 1px solid #c4c0c0;
+}
+.header header {
+  width: 100%;
+  height: 5rem;
+  background-color: #FF8A00;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header header .right img {
+  width: 10rem;
+  height: 3.4rem;
+}
+.header header .left img {
+  width: 2.7rem;
+  height: 2.8rem;
+  margin-left: 1.5rem;
+}
+.header .ye {
+  height: 4rem;
+  line-height: 4rem;
+  background-color: white;
+  padding: 0 1.3rem;
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.header .ye span {
+  font-weight: 500;
+}
+.header .user {
+  margin-top: 4rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header .user a {
+  font-size: 1.8rem;
+  color: white;
+  padding: 0.3rem 1.2rem;
+  margin-top: 1rem;
+}
+.header .user img {
+  width: 7rem;
+}
+.box {
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.box .left {
+  display: flex;
+}
+.box .left a {
+  font-size: 1.6rem;
+  margin: 1rem;
+  text-align: center;
+  color: white;
+}
+.box .left a img {
+  width: 2rem;
+  height: 2rem;
+}
+.btn {
+  width: 90%;
+  height: 4rem;
+  margin: auto;
+  margin-top: 30px;
+  font-size: 17px;
+  color: #e9e5e2;
+  background-color: #FF8A00;
+  text-align: center;
+  line-height: 4rem;
+  border: 1px solid #cecbcb;
+}
+.tab {
+  width: 100%;
+  height: 5.5rem;
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+.tab div {
+  text-align: center;
+  line-height: 5rem;
+  width: 50%;
+  height: 100%;
+  font-size: 1.6rem;
+  border-bottom: 3px solid #b0aca7;
+}
+.tab .ji {
+  border-bottom: 3px solid #FF8A00;
+}
+.deng > div:nth-of-type(1) .text {
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid #a79e9e;
+  background-color: white;
+}
+.deng > div:nth-of-type(1) .text input {
+  height: 100%;
+  outline: none;
+  border: none;
+  width: 70%;
+  text-indent: 2rem;
+}
+.text {
+  width: 100%;
+  height: 5rem;
+  border-bottom: 1px solid #a79e9e;
+  background-color: white;
+  position: relative;
+}
+.text .fa {
+  padding: 0.3rem 0.6rem;
+  border: 1px solid gray;
+  position: absolute;
+  right: 2.6rem;
+  top: 1.4rem;
+}
+.text input {
+  height: 100%;
+  outline: none;
+  border: none;
+  width: 70%;
+  text-indent: 2rem;
+}
+.endp {
+  width: 90%;
+  height: 3rem;
+  line-height: 3rem;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.endp a {
+  color: #b0aca7;
+  font-size: 1.5rem;
+}
+.endp > a:first-of-type {
+  color: #FF8A00;
+}

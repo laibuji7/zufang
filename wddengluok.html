@@ -6,12 +6,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>我的-登陆成功</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./css/wddengluok.css">
     <script src=""></script>
 </head>
 
 <body>
+    <div class="header">
+        <header>
+            <div class="right">
+                <img src="./img/logo.jpg" alt="">
+            </div>
+            <div class="left">
+                <a href="./wddenglu.html">
+                    <img src="./img/my.jpg" alt="">
+                </a>
+                <a href="./shouye.html">
+                    <img src="./img/xiazai.jpg" alt="">
+                </a>
+            </div>
+        </header>
+        <div class="ye">
+            <p>首页 <span>>我的</span></p>
+
+
+        </div>
+        <div class="user">
+            <img src="./img/urse2.png" alt="">
+
+            <a href="">欢迎你，18686868686</a>
+        </div>
+
+
+
+    </div>
+
+
+    <ul>
+        <li>
+            <a href="./fyxx.html">
+                我关注的房源
+
+
+            </a>
+        </li>
+        <li>
+            <a href="./fangyuants.html">
+                我关注的小区
+
+
+            </a>
+        </li>
+
+        <li>
+            <a href="#">
+
+                我的看房记录
+
+
+            </a>
+        </li>
+    </ul>
+
+    <div class="esc">
+        <a href="./wddenglu.html">退出登录</a>
+
+    </div>
+
 
 </body>
 
 </html>
+<script>
+
+    function setRem() {
+
+        var ui_w = 375;
+        var clientWidth = document.documentElement.clientWidth || document.body.clientWidth;
+
+        clientWidth = clientWidth < 375 ? 375 : clientWidth;
+        var html_ = document.querySelector("html")
+        html_.style.fontSize = `${(clientWidth / ui_w) * 10}px`;
+
+
+    }
+    window.onresize = setRem;
+    window.onload = setRem;
+
+</script>
